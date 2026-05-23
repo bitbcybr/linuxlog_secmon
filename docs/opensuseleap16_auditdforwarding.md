@@ -82,6 +82,8 @@ sudo nano -l /etc/audit/audisp-remote.conf
 
 ``
 remote_server = 192.168.122.19
+``
+`
 port = 60
 ``
 - Save and exit.
