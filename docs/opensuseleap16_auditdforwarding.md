@@ -3,8 +3,8 @@
 ---
 
 ## Host roles
-- Sender: openSUSE Leap 16 (default auditd)  
-- Receiver: Debian 13 (clean install + install and running auditd listener)
+- Sender: openSUSE Leap 16.0 (clean install, default auditd enabled, Kernel 6.12.0-160000.5-default)  
+- Receiver: Debian 13.5 (clean install + install and running auditd listener, Kernel 6.12.88+deb13-amd64)
 
 ---
 
