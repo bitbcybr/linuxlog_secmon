@@ -107,10 +107,11 @@ Looking at the Receiver logs coming in:
 ```bash
 sudo less /etc/audit/rules.d/audit.rules
 ```
-In this test case default lines only include:
+In this test case default lines only include(beside comments):
+```bash
 -D
 -a task,never
-
+```
 ---
 
 #### Quick test (generate an audit event)
