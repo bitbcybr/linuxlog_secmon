@@ -113,7 +113,9 @@ In this test case default lines only include(beside comments):
 -a task,never
 ```
 
-Following the openSUSE doc's this already is compliant to CAPP [openSUSE Doc] (https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-comp.html). So if to follow this, at the end of receiver/SIEM just trying to filter out the noise which may come from other "not auditd controlled services", would be approriate for some cases.
+Following the openSUSE doc's with having Linux Audit Framework it is already compliant to CAPP (https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-comp.html). So if to follow this, at the end of Receiver/SIEM just trying to get basic rules and filter out the noise which may come from other "not auditd controlled services", would be approriate for a lot of cases.
+
+Making use of an example with just a few changes where needed, i bet to cover most cases and making it better auditable than most supply chains with proprietary 3rd-party vendors: https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-setup.html#sec-audit-aurules
 
 ---
 
