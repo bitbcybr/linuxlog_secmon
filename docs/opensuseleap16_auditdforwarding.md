@@ -133,6 +133,7 @@ tail -f /var/log/audit/audit.log
 
 ### Notes & caveats 
 - Ensure firewall on receiver allows TCP port 60 (or chosen port).  
-- Verify audispd plugin path and service names on Leap 16 before editing.  
+- Verify audispd plugin path and service names on Leap 16 before editing.
+- Check for logrotate on the sender host, so that you are not running out of disk space (however default settings should be ok).
 
 ---
