@@ -112,6 +112,9 @@ In this test case default lines only include(beside comments):
 -D
 -a task,never
 ```
+
+Following the openSUSE doc's this already is compliant to CAPP ([openSUSE Doc] (https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-comp.html). So if to follow this, at the end of receiver/SIEM just trying to filter out the noise which may come from other "not auditd controlled services", would beapproriate for some cases.
+
 ---
 
 #### Quick test (generate an audit event)
