@@ -91,7 +91,7 @@ sudo systemctl restart auditd
 ---
 
 Looking at the Receiver logs coming in:
-![Screenshot](./assets/suseleap16_auditd_capture_1.png)
+![Screenshot](/assets/suseleap16_auditd_capture_1.png)
 
 
 ---
