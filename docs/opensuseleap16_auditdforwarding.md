@@ -66,12 +66,13 @@ sudo zypper -n install audit audit-audispd-plugins
 sudo nano -l /etc/audit/plugins.d/au-remote.conf
 ```
 - Ensure these lines (or similar) are present and set:
+- ```bash
 active = yes
 direction = out
 path = /sbin/audisp-remote
 type = always
 format = string
-
+``
 - Save and exit.
 
 3. Edit audisp-remote configuration:
