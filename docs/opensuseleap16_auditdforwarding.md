@@ -1,4 +1,4 @@
-#openSUSE Leap 16 — auditd → remote audit server (Debian 13)
+# openSUSE Leap 16 — auditd → remote audit server (Debian 13)
 
 ---
 
