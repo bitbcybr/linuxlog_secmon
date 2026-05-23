@@ -1,2 +1,18 @@
-# linuxlog_secmon
+# Linux Logging and Security Monitoring
 Some stuff around linux logging for security monitoring (with too many times fast-made setup of unproofed available tutorials)
+
+## 🗺 Roadmap 
+- Verified detection rules and community rule‑set contributions  
+- Curated, evolving collection of practical, distro‑aware guides and examples for monitoring Linux hosts (from auditd and syslog forwarding to integrity checking and SIEM integration. Written for operators who want clear, testable validation steps.
+
+### 📁 Repository Layout (part of roadmap)
+- docs/ — step‑by‑step guides (one topic per file)  
+- examples/ — production‑style config files and snippets  
+
+### 📚 Example Guides (part of roadmap)
+
+In the future find the full index in `docs/INDEX.md`.
+
+---
+
+Thanks for checking out the project — contributions, feedback, and real‑world tests are welcome!
