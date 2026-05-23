@@ -96,8 +96,9 @@ Looking at the Receiver logs coming in:
 
 ---
 
-## Additional Infos
-### Open and inspect default rules manually:
+### Additional Infos
+
+#### Open and inspect default rules manually:
 ```bash
 sudo less /etc/audit/rules.d/audit.rules
 ```
@@ -107,16 +108,7 @@ In this test case default lines only include:
 
 ---
 
-### Check rotation and auditd config
-Open and inspect rotation/retention in auditd config:
-```bash
-sudo nano -l /etc/audit/auditd.conf
-```
-Check settings such as max_log_file, num_logs, and related parameters. Save/exit when done.
-
----
-
-### Quick test (generate an audit event)
+#### Quick test (generate an audit event)
 
 On sender:
 ```bash
@@ -133,13 +125,8 @@ tail -f /var/log/audit/audit.log
 
 ---
 
-## Notes & caveats 
+### Notes & caveats 
 - Ensure firewall on receiver allows TCP port 60 (or chosen port).  
 - Verify audispd plugin path and service names on Leap 16 before editing.  
 
-```
-
 ---
-
-## Status
-- If configured as above, logs should arrive on Debian 13 at /var/log/audit/audit.log — verify with tail or ausearch.
