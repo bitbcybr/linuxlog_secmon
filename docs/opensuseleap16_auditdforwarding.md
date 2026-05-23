@@ -1,4 +1,4 @@
-# openSUSE Leap 16 — auditd → remote audit server (Debian 13)
+# openSUSE Leap 16 - auditd → remote audit server (Debian 13)
 
 ---
 
@@ -21,7 +21,7 @@
 
 ---
 
-## Receiver (Debian 13) — enable auditd TCP listener
+## Receiver (Debian 13) - enable auditd TCP listener
 
 1. Install auditd:
 ```bash
@@ -54,7 +54,7 @@ Logs received by the Debian auditd will be written to /var/log/audit/audit.log (
 
 ---
 
-## Sender (openSUSE Leap 16) — enable audisp remote plugin
+## Sender (openSUSE Leap 16) - enable audisp remote plugin
 
 1. Install required packages:
 ```bash
@@ -88,11 +88,16 @@ port = 60
 ```bash
 sudo systemctl restart auditd
 ```
+---
+
+Looking at the Receiver logs coming in:
+![Screenshot](./assets/suseleap16_auditd_capture_1.png)
+
 
 ---
 
-## Default audit rules (openSUSE Leap 16)
-Open and inspect default rules manually:
+## Additional Infos
+### Open and inspect default rules manually:
 ```bash
 sudo less /etc/audit/rules.d/audit.rules
 ```
@@ -102,7 +107,7 @@ In this test case default lines only include:
 
 ---
 
-## Check rotation and auditd config
+### Check rotation and auditd config
 Open and inspect rotation/retention in auditd config:
 ```bash
 sudo nano -l /etc/audit/auditd.conf
@@ -111,7 +116,7 @@ Check settings such as max_log_file, num_logs, and related parameters. Save/exit
 
 ---
 
-## Quick test (generate an audit event)
+### Quick test (generate an audit event)
 
 On sender:
 ```bash
@@ -131,7 +136,7 @@ tail -f /var/log/audit/audit.log
 ## Notes & caveats 
 - Ensure firewall on receiver allows TCP port 60 (or chosen port).  
 - Verify audispd plugin path and service names on Leap 16 before editing.  
-journalctl -u audispd -f
+
 ```
 
 ---
