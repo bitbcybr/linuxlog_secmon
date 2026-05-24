@@ -142,3 +142,7 @@ tail -f /var/log/audit/audit.log
 - Check for logrotate on the sender host, so that you are not running out of disk space (however default settings should be ok).
 
 ---
+
+Sorry for the not refacured version of this, but maybe it helps:
+
+![Linux Audit Framework Diagramm 1(/assets/LAF_gen_2025_from_libredraw.jpeg)
