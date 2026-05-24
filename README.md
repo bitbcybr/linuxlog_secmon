@@ -12,7 +12,7 @@ Some stuff around linux logging for security monitoring (with too many times hav
 
 ### 📚 Example Guides (part of roadmap)
 
-- [OpenSUSE Leap 16 Native Auditd‑Forwarding](https://github.com/bitbcybr/linuxlog_secmon/blob/main/docs/opensuseleap16_auditdforwarding.md)
+- [OpenSUSE Leap 16 Native Auditd‑Forwarding](https://github.com/bitbcybr/linuxlog_secmon/blob/main/docs/opensuseleap16_auditdfwd_basic.md)
 
 In the future find the full index in `docs/INDEX.md`.
 
