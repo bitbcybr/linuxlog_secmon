@@ -6,8 +6,8 @@ Some stuff around linux logging for security monitoring (with too many times hav
 - Curated, evolving collection of practical, distro‑aware guides and examples for monitoring Linux hosts (from auditd and syslog forwarding to integrity checking and SIEM integration. Written for operators who want clear, testable validation steps.
 
 ### 📁 Repository Layout (part of roadmap)
-- docs/ - step‑by‑step guides (one topic per file)
-- assets/ - Screencaptures and stuff...
+- docs/ - step‑by‑step guides (one topic per file) - OK
+- assets/ - Screencaptures and stuff... - OK
 - examples/ - production‑style config files and snippets  
 
 ### 📚 Example Guides (part of roadmap)
