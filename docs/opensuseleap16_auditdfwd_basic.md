@@ -10,7 +10,7 @@
 
 ## Assumptions
 - Local network reachable: Receiver IP 192.168.122.19  
-- Temporary test/POC only — transport is unencrypted. For some production env's, other secured forwarders will come into play  
+- POC/trusted networks only — transport is unencrypted. For some production env's, other secured forwarders will come into play  
 
 ---
 
@@ -56,7 +56,7 @@ Logs received by the Debian auditd will be written to /var/log/audit/audit.log (
 
 ## Sender (openSUSE Leap 16) - enable audisp remote plugin
 
-1. Install required packages:
+1. Install required packages(in this case auditd was already installed and running):
 ```bash
 sudo zypper -n install audit audit-audispd-plugins
 ```
@@ -83,10 +83,9 @@ sudo nano -l /etc/audit/audisp-remote.conf
 
 ``
 remote_server = 192.168.122.19
-``
-`
+
 port = 60
-``
+```
 - Save and exit.
 
 4. Restart auditd / audispd:
