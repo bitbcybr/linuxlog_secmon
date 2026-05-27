@@ -81,7 +81,7 @@ sudo nano -l /etc/audit/audisp-remote.conf
 ```
 - Set the remote server and port (replace values as needed, maybe your receiver is able to parse these logs even when receiving it on another port, maybe a SIEM with a parser...):
 
-``
+```bash
 remote_server = 192.168.122.19
 
 port = 60
