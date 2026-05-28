@@ -142,6 +142,3 @@ tail -f /var/log/audit/audit.log
 
 ---
 
-Sorry for the not refacured version of this, but maybe it helps:
-
-![Linux Audit Framework Diagramm 1](/assets/LAF_gen_2025_from_libredraw.jpeg)
