@@ -141,4 +141,6 @@ tail -f /var/log/audit/audit.log
 - Check for logrotate on the sender host, so that you are not running out of disk space (however default settings should be ok).
 
 ---
+Overview of components
 
+![lafdiagramm](/assets/LAF_diagramm_components.svg)
