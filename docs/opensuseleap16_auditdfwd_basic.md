@@ -114,7 +114,7 @@ In this test case default lines only include(beside comments):
 
 Following the openSUSE doc's with having Linux Audit Framework it is already compliant to CAPP (https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-comp.html).
 
-Making use of an example with just a few changes where needed, i bet to cover most cases and making it better auditable than most supply chains with proprietary 3rd-party vendors: https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-setup.html#sec-audit-aurules https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-scenarios.html
+Making use of an example with just a few changes where needed, i bet to cover most cases and making it better auditable than most supply chains with proprietary 3rd-party vendors and "MDR providers": https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-setup.html#sec-audit-aurules https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-audit-scenarios.html
 
 ---
 
