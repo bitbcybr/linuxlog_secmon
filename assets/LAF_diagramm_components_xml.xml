@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16">
+  <defs>
+    <!-- Arrow markers — sized generously so tips remain visible even near box edges -->
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f4e96"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a72121"/>
+    </marker>
+  </defs>
+
+  <!-- ===== COLUMN HEADERS ===== -->
+  <text x="245" y="50" font-size="26" font-weight="700" fill="#1f4e96">CONFIGURATION / CONTROL</text>
+  <text x="730" y="50" font-size="26" font-weight="700" fill="#1a1a1a">CORE COMPONENTS</text>
+  <text x="1230" y="50" font-size="26" font-weight="700" fill="#8c1d1d">LOGS &amp; ANALYSIS</text>
+
+  <!-- ===== LEFT COLUMN: CONFIGURATION / CONTROL ===== -->
+  <!-- auditctl / rules.d -->
+  <rect x="60" y="100" width="380" height="120" rx="14" ry="14" fill="#eaf1fb" stroke="#1f4e96" stroke-width="2"/>
+  <text x="250" y="135" text-anchor="middle" font-size="20" font-weight="700" fill="#1f4e96">auditctl / rules.d</text>
+  <text x="250" y="165" text-anchor="middle" fill="#1f4e96">(audit.rules)</text>
+  <text x="250" y="195" text-anchor="middle" fill="#1f4e96">Define audit rules</text>
+
+  <!-- auditd.conf -->
+  <rect x="60" y="280" width="380" height="120" rx="14" ry="14" fill="#eaf1fb" stroke="#1f4e96" stroke-width="2"/>
+  <text x="250" y="315" text-anchor="middle" font-size="20" font-weight="700" fill="#1f4e96">auditd.conf</text>
+  <text x="250" y="345" text-anchor="middle" fill="#1f4e96">auditd configuration</text>
+  <text x="250" y="375" text-anchor="middle" fill="#1f4e96">(log path, rotation, ...)</text>
+
+  <!-- Watched paths / syscalls -->
+  <rect x="60" y="470" width="380" height="120" rx="14" ry="14" fill="#eaf1fb" stroke="#1f4e96" stroke-width="2"/>
+  <text x="250" y="505" text-anchor="middle" font-size="20" font-weight="700" fill="#1f4e96">Watched paths / syscalls</text>
+  <text x="250" y="535" text-anchor="middle" fill="#1f4e96">(e.g., /etc/passwd,</text>
+  <text x="250" y="558" text-anchor="middle" fill="#1f4e96">execve, mount, ...)</text>
+
+  <!-- ===== MIDDLE COLUMN: CORE COMPONENTS ===== -->
+  <!-- auditd (daemon) -->
+  <rect x="580" y="280" width="380" height="120" rx="14" ry="14" fill="#ece9e1" stroke="#5a5547" stroke-width="2"/>
+  <text x="770" y="315" text-anchor="middle" font-size="20" font-weight="700" fill="#3a352a">auditd (daemon)</text>
+  <text x="770" y="345" text-anchor="middle" fill="#3a352a">Receives, processes,</text>
+  <text x="770" y="370" text-anchor="middle" fill="#3a352a">and writes events</text>
+
+  <!-- Kernel audit -->
+  <rect x="580" y="470" width="380" height="120" rx="14" ry="14" fill="#e6efd9" stroke="#3d6a1f" stroke-width="2"/>
+  <text x="770" y="505" text-anchor="middle" font-size="20" font-weight="700" fill="#3d6a1f">Kernel audit</text>
+  <text x="770" y="535" text-anchor="middle" fill="#3d6a1f">subsystem (Syscall, LSM)</text>
+  <text x="770" y="565" text-anchor="middle" fill="#3d6a1f">Generates audit events</text>
+
+  <!-- ===== RIGHT COLUMN: LOGS & ANALYSIS ===== -->
+  <!-- aureport -->
+  <rect x="1100" y="100" width="220" height="120" rx="14" ry="14" fill="#fbeaea" stroke="#a72121" stroke-width="2"/>
+  <text x="1210" y="135" text-anchor="middle" font-size="20" font-weight="700" fill="#8c1d1d">aureport</text>
+  <text x="1210" y="165" text-anchor="middle" fill="#8c1d1d">Reporting &amp;</text>
+  <text x="1210" y="190" text-anchor="middle" fill="#8c1d1d">statistics</text>
+
+  <!-- ausearch -->
+  <rect x="1350" y="100" width="220" height="120" rx="14" ry="14" fill="#fbeaea" stroke="#a72121" stroke-width="2"/>
+  <text x="1460" y="135" text-anchor="middle" font-size="20" font-weight="700" fill="#8c1d1d">ausearch</text>
+  <text x="1460" y="165" text-anchor="middle" fill="#8c1d1d">Search in</text>
+  <text x="1460" y="190" text-anchor="middle" fill="#8c1d1d">audit logs</text>
+
+  <!-- /var/log/audit/audit.log -->
+  <rect x="1100" y="280" width="470" height="120" rx="14" ry="14" fill="#fbeaea" stroke="#a72121" stroke-width="2"/>
+  <text x="1335" y="315" text-anchor="middle" font-size="20" font-weight="700" fill="#8c1d1d">/var/log/audit/audit.log</text>
+  <text x="1335" y="360" text-anchor="middle" fill="#8c1d1d">Audit log</text>
+
+  <!-- /etc/audit/plugins.d/ * -->
+  <rect x="1100" y="470" width="470" height="120" rx="14" ry="14" fill="#fbeaea" stroke="#a72121" stroke-width="2"/>
+  <text x="1335" y="505" text-anchor="middle" font-size="20" font-weight="700" fill="#8c1d1d">/etc/audit/plugins.d/ *</text>
+  <text x="1335" y="535" text-anchor="middle" fill="#8c1d1d">Audit dispatcher plugins</text>
+  <text x="1335" y="560" text-anchor="middle" fill="#8c1d1d">(integrated in auditd)</text>
+
+  <!-- local syslog -->
+  <rect x="1040" y="680" width="290" height="160" rx="14" ry="14" fill="#fbeaea" stroke="#a72121" stroke-width="2"/>
+  <text x="1185" y="715" text-anchor="middle" font-size="20" font-weight="700" fill="#8c1d1d">local syslog</text>
+  <text x="1185" y="745" text-anchor="middle" fill="#8c1d1d">Forwarding via</text>
+  <text x="1185" y="770" text-anchor="middle" fill="#8c1d1d">syslog plugin</text>
+  <text x="1185" y="810" text-anchor="middle" fill="#8c1d1d">(rsyslog / syslog-ng)</text>
+
+  <!-- remote host -->
+  <rect x="1370" y="680" width="200" height="160" rx="14" ry="14" fill="#fbeaea" stroke="#a72121" stroke-width="2"/>
+  <text x="1470" y="715" text-anchor="middle" font-size="20" font-weight="700" fill="#8c1d1d">remote host</text>
+  <text x="1470" y="745" text-anchor="middle" fill="#8c1d1d">Direct via</text>
+  <text x="1470" y="770" text-anchor="middle" fill="#8c1d1d">au-remote plugin</text>
+  <text x="1470" y="810" text-anchor="middle" fill="#8c1d1d">(aggregating auditd)</text>
+
+  <!-- ===== ARROWS: Configuration / Control (BLUE) ===== -->
+  <!-- auditctl/rules.d -> auditd (right, then down into auditd top edge at y=280) -->
+  <path d="M 440 160 L 680 160 L 680 275" fill="none" stroke="#1f4e96" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+  <text x="500" y="230" fill="#1f4e96" font-size="15">Configuration /</text>
+  <text x="500" y="250" fill="#1f4e96" font-size="15">Control</text>
+
+  <!-- auditd.conf -> auditd (ends just before auditd box) -->
+  <path d="M 440 340 L 575 340" fill="none" stroke="#1f4e96" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+
+  <!-- auditd.conf -> Kernel audit (diagonal — auditd.conf also tunes kernel-side parameters like backlog) -->
+  <path d="M 440 380 L 575 508" fill="none" stroke="#1f4e96" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Watched paths/syscalls -> Kernel audit (ends just before Kernel audit box) -->
+  <path d="M 440 530 L 575 530" fill="none" stroke="#1f4e96" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+
+  <!-- ===== ARROWS: Event / Data flow (RED) ===== -->
+  <!-- Kernel audit -> auditd (upward; ends just before auditd box at y=400) -->
+  <path d="M 770 470 L 770 405" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+  <text x="785" y="438" fill="#a72121" font-size="15">Event /</text>
+  <text x="785" y="458" fill="#a72121" font-size="15">Data flow</text>
+
+  <!-- auditd -> audit.log (ends just before audit.log box at x=1100) -->
+  <path d="M 960 320 L 1095 320" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <!-- auditd -> plugins.d (down-right path; ends just before plugins.d box) -->
+  <path d="M 960 360 L 1030 360 L 1030 510 L 1095 510" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <!-- audit.log -> aureport (ends just before aureport box at y=220) -->
+  <path d="M 1210 280 L 1210 225" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <!-- audit.log -> ausearch (ends just before ausearch box at y=220) -->
+  <path d="M 1460 280 L 1460 225" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <!-- plugins.d -> local syslog (ends just before local syslog box at y=680) -->
+  <path d="M 1230 590 L 1230 645 L 1185 645 L 1185 675" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <!-- plugins.d -> remote host (ends just before remote host box at y=680) -->
+  <path d="M 1440 590 L 1440 645 L 1470 645 L 1470 675" fill="none" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="60" y="700" width="380" height="140" rx="10" ry="10" fill="#ffffff" stroke="#aaaaaa" stroke-width="1.2"/>
+  <text x="250" y="730" text-anchor="middle" font-weight="700" fill="#1a1a1a">LEGEND</text>
+  <line x1="90" y1="765" x2="150" y2="765" stroke="#1f4e96" stroke-width="2.2" marker-end="url(#arrow-blue)"/>
+  <text x="170" y="770" fill="#1a1a1a" font-size="15">= Configuration / Control</text>
+  <line x1="90" y1="805" x2="150" y2="805" stroke="#a72121" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+  <text x="170" y="810" fill="#1a1a1a" font-size="15">= Event / Data flow</text>
+
+  <!-- ===== FOOTNOTE ===== -->
+  <text x="40" y="910" font-size="14" fill="#333">* On modern systems (RHEL/CentOS Stream 8+, SLES 15 SP4+, openSUSE Leap 15.4+, Debian 11+, Ubuntu 22.04+)</text>
+  <text x="40" y="932" font-size="14" fill="#333">  the former standalone audispd daemon is integrated directly into auditd (audit &gt;= 3.0).</text>
+  <text x="40" y="954" font-size="14" fill="#333">  Plugins are configured via /etc/audit/plugins.d/.</text>
+</svg>
